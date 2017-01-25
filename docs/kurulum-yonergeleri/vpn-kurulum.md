@@ -296,13 +296,13 @@ cipher AES-256-CBC
 ```
 
 * Bağlantı gerçekletirilmiş olur.
-* Cep telefonu üzerinde openvpn ile bağlantı sağlamak için openvpn bağlantısı gerçekleştirebilen bir program olamlıdır. (Aşağıdaki adımlar android bir telefon üzerinde OpenVPN Clietn Free uygulaması ile gerçeklenmiştir.)
-* Openvpn server'a bağlantı sağlayacak kullanıcı için oluşturulan ovpn dosyası cep telefonuna aktarılır. Daha sonra OpenVPN Client Free uygulaması açılır. Ekranda bulunan "+" simgesine tıklanır ve "**IMPORT VPN PROFİLE**" seçeneğine tıklanır ve ovpn dosyası seçilir.
-![OpenVpn](../img/m-openvpn01.jpg)
-* Dosya seçildikten sonra ekranda seçili olan dosya off şeklinde görülmektedir. 
-![OpenVpn](../img/m-openvpn02.jpg)
-* Kullanılan openvpn server'da Active Directory authentication bulunduğundan dolayı bu durum on yapıldığında kullancı adı ve parola sormaktadır. Bu bilgiler girildikten sonra OK butonuna tıklanır. openvpn server'a baplantı sağlanmış olacaktır. 
-![OpenVpn](../img/m-openvpn03.jpg)
+* Cep telefonu üzerinde openvpn ile bağlantı sağlamak için openvpn bağlantısı gerçekleştirebilen bir program olamlıdır. (Aşağıdaki adımlar android bir telefon üzerinde OpenVPN Connect uygulaması ile gerçekleştirilmiştir.)
+* Openvpn server'a bağlantı sağlanacak kullanıcı için oluşturulan ovpn dosyası cep telefonuna aktarılır. Daha sonra OpenVPN Connect uygulaması açılır. Ekranda bulunan "Menü" simgesine tıklanır ve "**Import**" seçeneği seçilir.
+![OpenVpn](../img/m-openvpn01.png)
+* Açılan yeni menüden **Import Profile from SD card** seçeneği seçilir. 
+![OpenVpn](../img/m-openvpn02.png)
+* Telefona indirilen ovpn dosyası seçilerek "SELECT" seçeneğine tıklanır. Daha sonra "Connect" seçeneği tıklanarak openvpn suncuya bağlantı sağlanmış olunur.
+![OpenVpn](../img/m-openvpn03.png)
 ###IPsec StrongSwan Kurulum İşlemleri
 
 * Kurulum öncesinde aralarında bağlantı sağlanacak ipsec vpn sunucularının iç ve dış bacaklarına ait ip/subnet bilgileri kesinleştirilmelidir.
