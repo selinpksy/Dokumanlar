@@ -679,8 +679,8 @@ gkts.alan.adi
 $ cd roles/base/vars/
 $ sudo vi main.yml
 # ntp server bilgileri girilmektedir.
-        FirstNtpServerHost: "0.debian.pool.ntp.org"
-        SecondNtpServerHost: "1.debian.pool.ntp.org"
+        FirstNtpServerHost: "0.tr.pool.ntp.org"
+        SecondNtpServerHost: "1.tr.pool.ntp.org"
 
 # rsyslog yapilandirmasini belirtmektedir.
         conf:
