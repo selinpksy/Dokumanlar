@@ -344,9 +344,9 @@ ntp:
         enabled: "yes"
 base_ntp_servers:
     server1:
-        fqdn: "0.debian.pool.ntp.org"
+        fqdn: "0.tr.pool.ntp.org"
     server2:
-        fqdn: "1.debian.pool.ntp.org"
+        fqdn: "1.tr.pool.ntp.org"
 #    serverX:
 #        fqdn: ""
 ```
