@@ -497,7 +497,7 @@ subprocess.Popen(["/usr/bin/ssh -o StrictHostKeyChecking=no -o UserKnownHostsFil
 ```
 
 
-* “**roles/gitlab/vars/**” dizini altında bulunan “**main.yml**” dosyasında, “**backup**” fonksiyonu altında bulunan “**Server**” ve “**Port**” değişkenlerine, Yerele kurulacak gitlab sunucusunun bilgileri yazılır. GitLab yedekli kurulmayacak ise, gitlab sunucu bilgileri içerisine mevcutta kullanılacak gitlab bilgileri girilmelidir. 
+* “**roles/gitlab/vars/**” dizini altında bulunan “**main.yml**” dosyasında, “**backup**” fonksiyonu altında bulunan “**Server**” ve “**Port**” değişkenlerine, Yerele kurulacak gitlab sunucusunun bilgileri yazılır. GitLab yedekli kurulmayacak ise, gitlab sunucu bilgileri içerisine mevcutta kullanılacak gitlab bilgileri girilmelidir. “**ansible**” fonksiyonu altında bulunan “**Server**” ve “**Port**” değişkenlerine ana ansible sunucusunun adresi ve ssh bağlantısı için kullandığı port bilgileri girilmelidir.
 
 ```
 $ cd roles/gitlab/vars/
