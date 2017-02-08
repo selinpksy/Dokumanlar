@@ -497,7 +497,7 @@ subprocess.Popen(["/usr/bin/ssh -o StrictHostKeyChecking=no -o UserKnownHostsFil
 ```
 
 
-* “**roles/gitlab/vars/**” dizini altında bulunan “**main.yml**” dosyasında, “**backup**” fonksiyonu altında bulunan “**Server**” ve “**Port**” değişkenlerine, Yerele kurulacak gitlab sunucusunun bilgileri yazılır. GitLab yedekli kurulmayacak ise, gitlab sunucu bilgileri içerisine mevcutta kullanılacak gitlab bilgileri girilmelidir. 
+* “**roles/gitlab/vars/**” dizini altında bulunan “**main.yml**” dosyasında, “**backup**” fonksiyonu altında bulunan “**Server**” ve “**Port**” değişkenlerine, Yerele kurulacak gitlab sunucusunun bilgileri yazılır. GitLab yedekli kurulmayacak ise, gitlab sunucu bilgileri içerisine mevcutta kullanılacak gitlab bilgileri girilmelidir. “**ansible**” fonksiyonu altında bulunan “**Server**” ve “**Port**” değişkenlerine ana ansible sunucusunun adresi ve ssh bağlantısı için kullandığı port bilgileri girilmelidir.
 
 ```
 $ cd roles/gitlab/vars/
@@ -601,7 +601,7 @@ gkts:
 
 ```
 
-* "**roles/gkts/vars/**" dizini altında bulunan "**nginx.yml**" dosyası içerisine “**nginx**” fonksiyonunun alt fonksinyonu olan “**admin**” altında bulunan “**server_name**” değişkenine admin arayüzü için ayarlanması istenen url adres bilgisi yazılır (Örn: admin.gkts.local).  Yönetici arayüzüne erişim için internet tarayıcısında bu adres kullanılacaktır. “**nginx**” fonksiyonunun alt fonksinyonu olan “**developer**” altında bulunan “**server_name**” değişkenine admin arayüzü için ayarlanması istenen domain adres bilgisi yazılır(Örn: kullanici.gkts.local). Kullanıcı arayüzüne erişim için internet tarayıcısında bu adres kullanılacaktır. 
+* "**roles/gkts/vars/**" dizini altında bulunan "**nginx.yml**" dosyası içerisine “**nginx**” fonksiyonunun alt fonksinyonu olan “**admin**” altında bulunan “**server_name**” değişkenine admin arayüzü için ayarlanması istenen url adres bilgisi yazılır (Örn: admin.gkts.local).  Yönetici arayüzüne erişim için internet tarayıcısında bu adres kullanılacaktır. “**nginx**” fonksiyonunun alt fonksinyonu olan “**developer**” altında bulunan “**server_name**” değişkenine kullanıcı arayüzü için ayarlanması istenen domain adres bilgisi yazılır(Örn: kullanici.gkts.local). Kullanıcı arayüzüne erişim için internet tarayıcısında bu adres kullanılacaktır. 
 
 ```
 $ cd roles/gkts/vars/
@@ -695,7 +695,7 @@ $ git add --all
 $ git commit -m "yapılan değişiklik commiti yazılır"
 $ git push origin master
 ```
-**NOT:** Kurulacak sistem, SIEM yapısına dahil edilmek isteniyorsa, kurulum sonrasında Siber Olay, Açıklık, Risk İzleme ve Yönetim Sistemi Kurulumu sayfasında bulunan [LMYS Clientlarında Ossec Agent Dağıtımı](siem-kurulum.md) başlığı incelenmelidir.
+**NOT:** Kurulacak sistem, SIEM yapısına dahil edilmek isteniyorsa, kurulum sonrasında Siber Olay, Açıklık, Risk İzleme ve Yönetim Sistemi Kurulumu sayfasında bulunan [MYS Clientlarında Ossec Agent Dağıtımı](siem-kurulum.md) başlığı incelenmelidir.
 
 * “**Ansible Playbookları**” dokümanında detaylı anlatımı bulunan, sunucu üzerinde gerekli sıkılaştırma işlemleri ve gitlab kurulumu yapacak olan “**gitlab.yml**” playbook’u çalıştırılır.
 
