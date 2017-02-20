@@ -21,7 +21,7 @@ $ git add --all
 $ git commit -m "yapılan değişiklik commiti yazılır"
 $ git push origin master
 ```
-**NOT:** Kurulacak sistem, SIEM yapısına dahil edilmek isteniyorsa, kurulum sonrasında Siber Olay, Açıklık, Risk İzleme ve Yönetim Sistemi Kurulumu sayfasında bulunan [LMYS Clientlarında Ossec Agent Dağıtımı](siem-kurulum.md) başlığı incelenmelidir.
+**NOT:** Kurulacak sistem, SIEM yapısına dahil edilmek isteniyorsa, kurulum sonrasında Siber Olay, Açıklık, Risk İzleme ve Yönetim Sistemi Kurulumu sayfasında bulunan [MYS Clientlarında Ossec Agent Dağıtımı](siem-kurulum.md) başlığı incelenmelidir.
 
 * Pardus Temel ISO dosyasından Pardus kurulumu tamamlandıktan sonra sisteme “**ahtapotops**” kullanıcı ile giriş yapılır. ahtapotops kullanıcısının parolası “**LA123!!**” olarak öntanımlıdır.
 
@@ -32,10 +32,17 @@ $ git push origin master
 ```
 $ sudo su -
 ```
-* Sisteme root kullanıcısı ile bağlantı sağlandıktan sonra tercih ettiğiniz bir metin düzenleyicisini kullanarak "**/etc/apt/source.list**" dosyasına aşağıdaki satır eklenmelidir.
+* Sisteme root kullanıcısı ile bağlantı sağlandıktan sonra tercih ettiğiniz bir metin düzenleyicisini kullanarak "**/etc/apt/source.list**" dosyasını açın ve Pardus depolarını kullanıyorsanız aşağıdaki satırları içerdiğinden emin olun.
 
 ```
 deb http://depo.pardus.org.tr/ahtapot yenikusak main
+deb http://193.140.98.199/pardus-yenikusak yenikusak main non-free contrib
+```
+
+* Eğer yeni bir paket deposu eklediniz veya çıkardıysanız aşağıdaki komutu çalıştırarak yerelinizdeki paket listesini güncelleyin.
+
+```
+# apt-get update
 ```
 
 * Aşağıdaki komut ile ansible ve git kurulumları yapılır.
