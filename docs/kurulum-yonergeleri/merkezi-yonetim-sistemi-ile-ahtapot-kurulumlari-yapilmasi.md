@@ -39,7 +39,7 @@ deb http://depo.pardus.org.tr/ahtapot yenikusak main
 deb http://193.140.98.199/pardus-yenikusak yenikusak main non-free contrib
 ```
 
-* Eğer yeni bir paket deposu eklediniz veya çıkardıysanız aşağıdaki komutu çalıştırarak yerelinizdeki paket listesini güncelleyin.
+* Aşağıdaki komutu çalıştırarak yerelinizdeki paket listesini güncelleyin.
 
 ```
 # apt-get update
