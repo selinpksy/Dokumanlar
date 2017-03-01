@@ -45,7 +45,7 @@ pages:
     - 'Firewall Builder Konfigürasyon Dosyası': 'dosyalar/gdys-fwb.md'
 - "HAKKINDA": hakkinda.md
 theme: readthedocs
-repo_url: https://github.com/Pardus-Ahtapot/Dokumanlar
+repo_url: https://github.com/Pardus-Ahtapot/Dokumanlar/tree/master/docs
 markdown_extensions:
     - extra
     - smarty
